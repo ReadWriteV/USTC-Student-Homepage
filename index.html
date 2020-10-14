@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        .bg-line {
+            background: linear-gradient(to right bottom, #e0f0ff 50%, #fff 50%);
+        }
+
+        .bd-navbar {
+            min-height: 4rem;
+            position: sticky;
+            top: 0;
+            z-index: 1071;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5">
+    <nav class="navbar navbar-expand-md navbar-light bg-light bd-navbar">
         <a class="navbar-brand" href="#">个人主页</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,12 +38,15 @@
                     <a class="nav-link" href="#">介绍</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#">文章</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">关于</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        其他项目
+                        个人项目
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">奇迹时代Ⅲ参考手册</a>
@@ -45,10 +54,37 @@
                         <a class="dropdown-item" href="#">。。。。</a>
                     </div>
                 </li>
+                <li>
+                    <svg class="bi" width="32" height="32" fill="currentColor">
+                        <use xlink:href="./bootstrap-icons.svg#shop" />
+                    </svg>
+                </li>
             </ul>
         </div>
     </nav>
 
+    <div class="container-fluid bg-line py-5">
+        <div class="container">
+            <h2>Cómo cualquier otro degradado, un degradado lineal no tiene dimensiones intrínsecas; es decir, no tiene
+                un tamaño natural o predefinido, ni una relación de aspecto. Su tamaño concreto se ajustará al del
+                elemento al cual se le aplica.
+
+                Los gradientes lineales están definidos por un eje, la línea gradiente, donde cada punto representa el
+                inicio de un color diferente. Las líneas perpendiculares a la línea gradiente tienen un único color,
+                para cada punto de la línea gradiente.
+
+                linear-gradient.png
+
+                La línea gradiente está definida por el centro de la caja que contiene la imagen gradiente y por un
+                ángulo. El color del gradiente está definido por diferentes puntos; el punto de inicio, el punto de fin
+                y, en el medio, puntos opcionales de cambio de color.</h2>
+        </div>
+    </div>
+    <div class="container-fluid bg-light">
+        <div class="container text-center py-4" style="min-height: 200px;">
+            <h1>个人介绍</h1>
+        </div>
+    </div>
     <div class="container-fluid bg-white">
         <div class="container">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -91,18 +127,28 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-light">
-        <div class="container text-center py-4">
-            <h1>个人介绍</h1>
-        </div>
-    </div>
     <div class="container-fluid bg-white">
-        <div class="container text-center py-4">
+        <div class="container text-center py-4" style="min-height: 200px;">
             <h1>项目介绍</h1>
         </div>
     </div>
-    <footer class="text-center text-muted bg-light py-4">
-        🚧 正在施工建设中...... 🚧
+    <footer class="container-fluid text-center bg-light">
+        <div class="row no-gutters">
+            <div class="col-sm py-4">
+                <div class="row justify-content-center">
+                    <div class="col-3"><a href="https://github.com/ReadWriteV">Github</a></div>
+                    <div class="col-3"><a href="https://www.ustc.edu.cn/">USTC</a></div>
+                    <div class="col-3"><a href="mailto:wr666@mail.ustc.edu.cn">Email</a></div>
+                </div>
+            </div>
+            <div class="col-sm py-4">
+                🚧 Under construction
+            </div>
+            <div class="col-sm py-4">
+                <img src="/cgi-bin/Count.cgi?df=wr666.dat&ft=0&tr=N&dd=D&pad=N" title="总访问次数" class="img-fluid"
+                    style="min-width: 10%;">
+            </div>
+        </div>
     </footer>
 
 </body>
