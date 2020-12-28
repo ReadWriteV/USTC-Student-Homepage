@@ -84,16 +84,10 @@
 <script src="./js/jquery.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/common.js"></script>
 
 <script>
-    $(function () {
-        $(document).ready(function () {
-            $("#header").load("/html/header.html", function () {
-                $("li").eq(1).attr("class", "active");
-            });
-            $("#footer").load("/html/footer.html");
-        });
-    });
+    injectHeaderAndFooter(1);
 </script>
 
 </html>
