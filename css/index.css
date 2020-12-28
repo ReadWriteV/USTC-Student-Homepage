@@ -1,0 +1,17 @@
+.bg-line {
+    background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
+}
+.bd-navbar {
+    min-height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+}
+
+.card {
+    transition: 0.5s linear;
+}
+
+.card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}

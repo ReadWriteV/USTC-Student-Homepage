@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>欢迎</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="header">
+        <!-- header will be automatic injected. -->
+    </div>
+    <div class="container-fluid bg-white">
+        <div class="container text-center py-4">
+            <div class="mb-4">
+                <h2>课程文件</h2>
+                <p>提供课程文件的暂存储，方便下载。</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 mb-3">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="/img/b.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="/img/b.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="/img/b.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="/img/b.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <!-- footer will be automatic injected. -->
+    </div>
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $(document).ready(function () {
+            $("#header").load("/html/header.html", function () {
+                $("li").eq(1).attr("class", "active");
+            });
+            $("#footer").load("/html/footer.html");
+        });
+    });
+</script>
+
+</html>
