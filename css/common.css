@@ -1,12 +1,6 @@
 .bg-line {
     background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
-    height: calc(100vh - 138.4px);
-}
-.bd-navbar {
-    min-height: 4rem;
-    position: sticky;
-    top: 0;
-    z-index: 1071;
+    min-height: calc(100vh - 138.4px);
 }
 
 .card {
